@@ -1,0 +1,27 @@
+### User Story / Gameplay
+
+- Describe the gameplay
+    // Pong is a two-dimensional sports game that simulates table tennis.
+The player controls an in-game paddle by moving it vertically across the left or right side of the screen. 
+They can compete against another player controlling a second paddle on the opposing side. 
+Players use the paddles to hit a ball back and forth.
+
+- What are the conditions when the game begins? 
+    // You will have  to click the screen to start the game. once the player clicks, the ball will randomnly float 
+from the center to a random paddle. Alternate serves every two points. 
+
+- Does the game have an end? If so, what are the conditions for when it ends?
+    // The game does have an end. When any player reaches 10 points the game will end and it'll take you back to the start screen.
+
+- What `if`s will there be?
+    // 
+### Visual Game Components:
+- What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
+  - Which will be static? (the board)
+  - Which will be animated? (the box)
+- What data will you need to manage each game component? For example, in Bouncing Box, the data values were `positionX`, `speedX`, and `points`.
+
+### Events / Logic 
+- What events will occur in this game? (timer events, keyboard events, clicking events?)
+- How do those events affect the data of the program?
+- For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
