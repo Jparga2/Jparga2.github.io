@@ -18,6 +18,10 @@ function runProgram(){
   "DOWN": 40
 }
   // Game Item Objects
+var positionX = 0;
+var positionY = 0;
+var speedX = 5;
+var speedY = -5;
 
 
   // one-time setup
@@ -33,27 +37,31 @@ function runProgram(){
   by calling this function and executing the code inside.
   */
   function newFrame() {
-    
-
+      repositionGameItem
+      redrawGameItem
   }
   
   /* 
   Called in response to events.
   */
   function handleKeyDown(event) {
-      if (event.which === KEY.ENTER) {
+      if (event.which === KEY.ENTER) {          
           console.log("enter pressed");
       }
       else if (event.which === KEY.LEFT){
+          speedX === -5;
           console.log("left pressed");
       }
       else if (event.which === KEY.UP){
+          speedX === -5;
             console.log("up pressed");
       }
       else if (event.which === KEY.RIGHT){
+          speedX === +5;
             console.log("right pressed");
       }
       else if (event.which === KEY.DOWN){
+          speedX === +5;
             console.log("down pressed");
       }
   }
@@ -69,6 +77,16 @@ function runProgram(){
 
     // turn off event handlers
     $(document).off();
+  }
+  function repositionGameItem(){
+      positionX += speedX;
+      positionY += speedY;
+
+  }
+
+  function redrawGameItem() {
+      $("#gameItem").css("left", positionX);
+
   }
   
 }

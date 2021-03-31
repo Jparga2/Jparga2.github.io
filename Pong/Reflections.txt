@@ -14,14 +14,30 @@ from the center to a random paddle. Alternate serves every two points.
     // The game does have an end. When any player reaches 10 points the game will end and it'll take you back to the start screen.
 
 - What `if`s will there be?
-    // 
+    // If the ball hits a paddle it will bounce.
+    If it hits the top or bottom of the canvas it will bounce
+    If a player scores, the ball will automatically restart to its original position 
+    
 ### Visual Game Components:
 - What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
-  - Which will be static? (the board)
+// two paddles 
+one ball
+two boxes where players will score 
+  - Which will be static? (the board) 
+  //the vertical line of the paddles, and the boxes where players will score 
   - Which will be animated? (the box)
+  //the ball, and paddles 
 - What data will you need to manage each game component? For example, in Bouncing Box, the data values were `positionX`, `speedX`, and `points`.
+//Positionx and positiony
+speedx and speedy 
 
 ### Events / Logic 
 - What events will occur in this game? (timer events, keyboard events, clicking events?)
+//when a player score the score will update
+the players will use the arrow keys to playerplayers will be able to click to start the game 
+
 - How do those events affect the data of the program?
+//It will make it a more fun game to play 
 - For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
+if the ball touches the top of the canvas it will bounce in the direction that is directed to 
+every time a player scores the paddles will reset to the same position as in the beginning of the game 
