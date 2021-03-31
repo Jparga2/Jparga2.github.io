@@ -110,7 +110,7 @@ function bounceCircle(circle){
     }
     else if (circle.y > boardHeight){
         circle.y -= circle.speedY;
-        circle.speedX *= -1;
+        circle.speedY *= -1;
     }
 }
 
